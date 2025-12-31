@@ -1,0 +1,26 @@
+# CreateBroadcastRequest
+
+## Example Usage
+
+```typescript
+import { CreateBroadcastRequest } from "emailr/models";
+
+let value: CreateBroadcastRequest = {
+  name: "Newsletter - January 2024",
+  subject: "Your monthly update",
+  fromEmail: "newsletter@example.com",
+};
+```
+
+## Fields
+
+| Field                                                                                         | Type                                                                                          | Required                                                                                      | Description                                                                                   | Example                                                                                       |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `name`                                                                                        | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           | Newsletter - January 2024                                                                     |
+| `subject`                                                                                     | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           | Your monthly update                                                                           |
+| `fromEmail`                                                                                   | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           | newsletter@example.com                                                                        |
+| `templateId`                                                                                  | *string*                                                                                      | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |
+| `segmentId`                                                                                   | *string*                                                                                      | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |
+| `htmlContent`                                                                                 | *string*                                                                                      | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |
+| `textContent`                                                                                 | *string*                                                                                      | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |
+| `scheduledAt`                                                                                 | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_minus_sign:                                                                            | N/A                                                                                           |                                                                                               |

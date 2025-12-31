@@ -1,0 +1,70 @@
+# Email
+
+## Example Usage
+
+```typescript
+import { Email } from "emailr/models";
+
+let value: Email = {
+  id: "123e4567-e89b-12d3-a456-426614174000",
+  organizationId: "aea83f50-0de4-45bb-ab0e-38b148e9c963",
+  messageId: "<id>",
+  fromEmail: "Fredy.Bogisich29@hotmail.com",
+  toEmail: "Felipe_Marquardt@hotmail.com",
+  subject: "<value>",
+  htmlContent: "<value>",
+  textContent: "<value>",
+  templateId: "7a831c8f-5d55-43c6-8c7a-8bdd5d592d39",
+  status: "sent",
+  sesMessageId: "<id>",
+  broadcastId: "4ac76662-aaab-4baa-8683-c9c7fb5560cb",
+  metadata: {
+    "key": "<value>",
+    "key1": "<value>",
+  },
+  sentAt: new Date("2025-10-27T10:41:38.633Z"),
+  deliveredAt: null,
+  openedAt: new Date("2024-01-05T07:39:07.698Z"),
+  clickedAt: new Date("2025-10-15T09:48:51.177Z"),
+  bouncedAt: null,
+  complainedAt: new Date("2025-09-27T07:08:16.626Z"),
+  createdAt: new Date("2023-08-15T10:02:27.867Z"),
+  threadId: null,
+  parentEmailId: "bd0713c5-f1ca-4efd-970d-0d5564594dc1",
+  attachments: null,
+  clickedLinks: [],
+  opens: [
+    "<value 1>",
+  ],
+};
+```
+
+## Fields
+
+| Field                                                                                         | Type                                                                                          | Required                                                                                      | Description                                                                                   | Example                                                                                       |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `id`                                                                                          | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           | 123e4567-e89b-12d3-a456-426614174000                                                          |
+| `organizationId`                                                                              | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `messageId`                                                                                   | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `fromEmail`                                                                                   | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `toEmail`                                                                                     | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `subject`                                                                                     | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `htmlContent`                                                                                 | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `textContent`                                                                                 | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `templateId`                                                                                  | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `status`                                                                                      | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           | sent                                                                                          |
+| `sesMessageId`                                                                                | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `broadcastId`                                                                                 | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `metadata`                                                                                    | Record<string, *any*>                                                                         | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `sentAt`                                                                                      | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `deliveredAt`                                                                                 | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `openedAt`                                                                                    | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `clickedAt`                                                                                   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `bouncedAt`                                                                                   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `complainedAt`                                                                                | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `createdAt`                                                                                   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `threadId`                                                                                    | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `parentEmailId`                                                                               | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `attachments`                                                                                 | *any*[]                                                                                       | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `clickedLinks`                                                                                | *any*[]                                                                                       | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `opens`                                                                                       | *any*[]                                                                                       | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
