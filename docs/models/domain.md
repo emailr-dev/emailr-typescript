@@ -16,8 +16,8 @@ let value: Domain = {
   dmarcVerified: true,
   cloudflareZoneId: "<id>",
   sesIdentityArn: "<value>",
-  createdAt: new Date("2024-07-02T14:07:21.695Z"),
-  verifiedAt: new Date("2023-09-26T05:15:59.868Z"),
+  createdAt: new Date("2025-07-02T14:07:21.695Z"),
+  verifiedAt: new Date("2024-09-25T05:15:59.868Z"),
   dkimTokens: [
     "<value 1>",
   ],

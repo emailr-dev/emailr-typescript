@@ -1,20 +1,21 @@
-speakeasyVersion: 1.680.11
+speakeasyVersion: 1.682.0
 sources:
     Emailr API:
         sourceNamespace: emailr-api
-        sourceRevisionDigest: sha256:5f79157c5d406a27546248f2a05732dfc4e55e683ffd9ae0a57f33020d380755
-        sourceBlobDigest: sha256:e33dfe7038efa22ed6bc173c6fab3e08bccfb61731f424ed495aab29a88e17e0
+        sourceRevisionDigest: sha256:399cac767df2fba7230deb087ab0623992d2b09dc78df10d11db8ac3a88274d5
+        sourceBlobDigest: sha256:be0ebf3a3f4f45eddfeed17eddc3fef186bf8c5bfd1d2caa4ef3f930ea0c8154
         tags:
             - latest
+            - speakeasy-sdk-regen-1767146080
             - 1.0.0
 targets:
     emailr:
         source: Emailr API
         sourceNamespace: emailr-api
-        sourceRevisionDigest: sha256:5f79157c5d406a27546248f2a05732dfc4e55e683ffd9ae0a57f33020d380755
-        sourceBlobDigest: sha256:e33dfe7038efa22ed6bc173c6fab3e08bccfb61731f424ed495aab29a88e17e0
+        sourceRevisionDigest: sha256:399cac767df2fba7230deb087ab0623992d2b09dc78df10d11db8ac3a88274d5
+        sourceBlobDigest: sha256:be0ebf3a3f4f45eddfeed17eddc3fef186bf8c5bfd1d2caa4ef3f930ea0c8154
         codeSamplesNamespace: emailr-api-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:d6ee61aa94412f778089562154a65e173c45a21ea13bc4122ce276ec8896f6a1
+        codeSamplesRevisionDigest: sha256:96e5303df6ec71910d873483548b5632b7a499c3b8d966ed1c47db924875cee9
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
@@ -31,6 +32,9 @@ workflow:
         emailr:
             target: typescript
             source: Emailr API
+            publish:
+                npm:
+                    token: $npm_token
             codeSamples:
                 registry:
                     location: registry.speakeasyapi.dev/hormo/emailr/emailr-api-typescript-code-samples

@@ -3,14 +3,17 @@ id: c043a283-b364-4b1b-be05-497d65ba6bd4
 management:
   docChecksum: 30dba725ae1a75e601498b0a33ce1e28
   docVersion: 1.0.0
-  speakeasyVersion: 1.680.11
-  generationVersion: 2.788.15
-  releaseVersion: 0.1.0
-  configChecksum: 44d2b1e8f5d2ffa4240e45bbc0e790c6
+  speakeasyVersion: 1.682.0
+  generationVersion: 2.791.1
+  releaseVersion: 0.2.0
+  configChecksum: 2c6bfb88b1e86768e138c558cbb8d3ca
+  repoURL: https://github.com/emailr-dev/emailr-typescript.git
+  installationURL: https://github.com/emailr-dev/emailr-typescript
+  published: true
 persistentEdits:
-  generation_id: 5a087e64-c8dc-4a39-ab41-2da81114a18d
-  pristine_commit_hash: 15e4f6db2a557ae463d3126c6811bdda75154c7f
-  pristine_tree_hash: 412de8f6e698ecded15f0ebd990f57e826ad838d
+  generation_id: 8dc53ebb-a72f-4600-984f-d0d4f4827879
+  pristine_commit_hash: 13c59d01ee9267a1c80e92c63d3126c2330d4fcf
+  pristine_tree_hash: 2ffb1088ab5bd970df79feae5b69cae962d84e75
 features:
   typescript:
     additionalDependencies: 0.1.0
@@ -35,8 +38,8 @@ features:
 trackedFiles:
   .devcontainer/README.md:
     id: b170c0f184ac
-    last_write_checksum: sha1:b6564d2a7c8ae764fff6d1b4666dcd787210a000
-    pristine_git_object: cdef18c30e383534a868742e1b9148f2670606f9
+    last_write_checksum: sha1:3f4672a9431dead5bbfa169704e1bb3a95033afd
+    pristine_git_object: 43d480d9034552cceedb13cd14d760965b4db251
   .devcontainer/devcontainer.json:
     id: b34062a34eb1
     last_write_checksum: sha1:d0b15193202c961e7d1875864ddb15f9d17c84dd
@@ -75,20 +78,20 @@ trackedFiles:
     pristine_git_object: 4364af220f836102da44fe68e9ab785f2ea2464e
   docs/models/apikey.md:
     id: 3cd1b4235d4f
-    last_write_checksum: sha1:27cf3e7ae4202286e0f0fa37d7365ab20d9eda70
-    pristine_git_object: 43fa65371f933777e855bae556368a6e13a9b3df
+    last_write_checksum: sha1:169a87c1607039d7698ae55e5880fb83e755afea
+    pristine_git_object: 99ed60faa2eca52964acdc26a65b9537d2c4f713
   docs/models/apikeylistitem.md:
     id: 377f03217a69
-    last_write_checksum: sha1:35cb0aac0581171e9853a0b41f6bb67883deae42
-    pristine_git_object: 73da3682b048b4d8d4945708ccfaf3eeb8ac0e12
+    last_write_checksum: sha1:fa796e0bccb84a7ae5fa5b2240352a0827efe348
+    pristine_git_object: 757698cbb9d1fd2217cf050220dfb0588721b9a4
   docs/models/attachment.md:
     id: 4317140d6e57
     last_write_checksum: sha1:02c7237f414dd1c4be780e6b6cddbfca9593eb9e
     pristine_git_object: e9403f53fea71d13f74e7469849049e5972599d1
   docs/models/broadcast.md:
     id: c7959346a4f8
-    last_write_checksum: sha1:e034bf1e88291242cd2206574046a8937553dbcd
-    pristine_git_object: c8548b88821d405a7c06064378f733f038dd372e
+    last_write_checksum: sha1:73f8f5f114a5ab06198569e79eac00496c82b168
+    pristine_git_object: e9d99437955f821493d880e83020fadfe319f3ae
   docs/models/bulkcreatecontactsrequest.md:
     id: 2b93ec73debb
     last_write_checksum: sha1:508b0e0eee526a2cbfbd02f44d5f16b694ebfd6b
@@ -99,8 +102,8 @@ trackedFiles:
     pristine_git_object: 8a02f7d7c9fd786b464f7383ee418523af850236
   docs/models/contact.md:
     id: 1357414e5140
-    last_write_checksum: sha1:bb2823c1012d967fb2e33f5101e25f1986b66d9b
-    pristine_git_object: bc647b71697d66766215bc5b1b55b421b4913271
+    last_write_checksum: sha1:7e45790ed3b0715ecefc3e0c452ce27f7f1bac0b
+    pristine_git_object: 9e2e1faa2fad585928542ee86574afd385c83d46
   docs/models/contactlistresponse.md:
     id: b1db0ad8b71a
     last_write_checksum: sha1:f380de5366a8e61d23c6b61e24950b11593e292a
@@ -139,8 +142,8 @@ trackedFiles:
     pristine_git_object: efc4db0a9970e4f17549c2dc93ac75482d9feefb
   docs/models/domain.md:
     id: 8fe01d6f9715
-    last_write_checksum: sha1:15c1188284b73e7e1e57fc297d16547f624ebb89
-    pristine_git_object: 374b5ebf691ae7fe649537a36f4c977abbf7499e
+    last_write_checksum: sha1:f33cfafc3f0757a905bd1315753164956a090ef1
+    pristine_git_object: fcf9cf9a0f12f3760c996d5c441904957dec70dc
   docs/models/domaindnsrecords.md:
     id: 9e46f68009d5
     last_write_checksum: sha1:9fc792718238ebbaf96d580b5ba0f65207da8495
@@ -151,12 +154,12 @@ trackedFiles:
     pristine_git_object: d9cfbcf08b47dd651deb576f43c77e3a871a5909
   docs/models/email.md:
     id: 951cb4db150e
-    last_write_checksum: sha1:d22289aff0c31ce5bedb08df9479d50893656d7a
-    pristine_git_object: aff9dbf95e88e125f315098e60fee4de916a78d4
+    last_write_checksum: sha1:622c7a1387ea99f0d8ba7de4f4c7fd20ba3f07c7
+    pristine_git_object: 6fbd6b643a84de89bcd4ce5e04d8e9d19c2ca818
   docs/models/emailevent.md:
     id: b2dd7edc2b3a
-    last_write_checksum: sha1:943d03a6cde4354b607b7d079f11dd7b352fdcd9
-    pristine_git_object: 2c93c827949eb8c762734cb0afc2ac8d327a414f
+    last_write_checksum: sha1:eb979a3720402fde609851d6d24ffeae0c0bd0e6
+    pristine_git_object: 6c8f12a4e127209df98147914429af8b18906fe0
   docs/models/emailmetrics.md:
     id: 9692e6b6366c
     last_write_checksum: sha1:fded598bedd1766a91a206d71ccc22b16e340e94
@@ -223,8 +226,8 @@ trackedFiles:
     pristine_git_object: 008773c75eb4a366071e35e6cb2b4f793178eda1
   docs/models/operations/listemailsresponse.md:
     id: 5f51d4b603e6
-    last_write_checksum: sha1:aebed5fb26fd99c4db579d59a31b6ebf9c531745
-    pristine_git_object: b06a68e1aaffa15e3eebdd0c9216a56645cfb9c3
+    last_write_checksum: sha1:dc04263fe298a8442fe8deee0935a3be73f97e2d
+    pristine_git_object: b504b21e95409a1d106dd421ade84b9a4a843962
   docs/models/operations/listlogsrequest.md:
     id: 4b4ebef03190
     last_write_checksum: sha1:64e703e42b7b97a8316732a6865ccd7f4e035584
@@ -263,8 +266,8 @@ trackedFiles:
     pristine_git_object: 51d4a91a20fa15cb151753edae356c5e9fb07632
   docs/models/organization.md:
     id: ea9c215ca2eb
-    last_write_checksum: sha1:a7fbb39b79d6f1215d8f6295c096e79e85febbd7
-    pristine_git_object: 1c2bcdb464d6712f25c0a4cfb6ad7e5af8e6467c
+    last_write_checksum: sha1:62c861b4c0afb6119a1361deed7fe1aff8f24a3c
+    pristine_git_object: 5d023c9b6ff484e7bb5db32f9dc0e18a7041ebdd
   docs/models/profiles.md:
     id: 61608a2e3629
     last_write_checksum: sha1:a2c58b96778573390ee23d62415b0a4a04dd0d8b
@@ -279,8 +282,8 @@ trackedFiles:
     pristine_git_object: c1318583864cabc2929571d86c648605b4d43884
   docs/models/segment.md:
     id: aee2724488d2
-    last_write_checksum: sha1:66c98b847461e965bb7e15c37028e39e61327085
-    pristine_git_object: 8024403d950bedc29ac2bd19ae7c5bb0a9873f6e
+    last_write_checksum: sha1:06a48c1b5431f1209c7f11418185923f93425bc9
+    pristine_git_object: b1ea738ef172c50a4e5cac03a37caf11ce7d65ee
   docs/models/sendbroadcastresponse.md:
     id: b06bbbcbc113
     last_write_checksum: sha1:f609ec620f7dfce2c144da56fbd908a461ec811d
@@ -299,12 +302,12 @@ trackedFiles:
     pristine_git_object: 634ecc251ebaf577f53e70b80d6221aab8b0913a
   docs/models/teammember.md:
     id: b7fe7ee9118d
-    last_write_checksum: sha1:e86b5892d96e1db5f25257fd28b3988e1e17e784
-    pristine_git_object: 6cb7a7c8604356c2f900009e60661a21a91de539
+    last_write_checksum: sha1:803bcf7c886de4a0f35238e4197a7f976cc6e73c
+    pristine_git_object: 3fad2b638af0371030c55c800b7f45981343d828
   docs/models/template.md:
     id: 52aa41ef1379
-    last_write_checksum: sha1:2544c2b3742578a445163169b7b41846c0a757eb
-    pristine_git_object: 2ec9106b51413d198a2167605e2fa823c60d67b2
+    last_write_checksum: sha1:80d988b9082016e7d6e02ec3a320751d907fbc15
+    pristine_git_object: 25235d2080c4b4cf85f95d41ad7b0ccf52d0e645
   docs/models/to.md:
     id: 0ebb118c6bfa
     last_write_checksum: sha1:b4c35a34bcdfe31b7a0eff1414876f7b13c33fff
@@ -335,16 +338,16 @@ trackedFiles:
     pristine_git_object: 75fd910ea85aeb22d89382c206e24d06692f257f
   docs/models/usagemetric.md:
     id: 3a5f3482b3db
-    last_write_checksum: sha1:446457cb90144b6963cf83d81c76cbd2a6367497
-    pristine_git_object: 54243166694bc0c59385e65fb9dc0893b7bbd987
+    last_write_checksum: sha1:d555958f19b2060742b1ff0470796ea105e3400c
+    pristine_git_object: 02927f2add06cb0d53d969278b03d1943d6a6955
   docs/models/webhook.md:
     id: 20220f003054
-    last_write_checksum: sha1:1857dc8100d43a5a21cf67fdff7b99128d0e3ddc
-    pristine_git_object: 2adeadd4062f24b5fafcdfa7dd8389db7760020a
+    last_write_checksum: sha1:c43a19715a3a6e639c878fea62a1689b0b357927
+    pristine_git_object: e22e6fcc450d8b1c7796d38ff5e8a6da58dbe226
   docs/models/webhookdelivery.md:
     id: d4054bb919af
-    last_write_checksum: sha1:2e5b8cd6b19782d5cb6650af5617f503fa152034
-    pristine_git_object: 01d038c9b44d591ee42704aae232141b06e784e2
+    last_write_checksum: sha1:b98eec98f01717f4d70aee8a5779a02822a84651
+    pristine_git_object: 0d71da7839fd1e37e7fc2bd38da88abf42be6989
   docs/models/webhooktoggleresponse.md:
     id: 5fc4f2155f2d
     last_write_checksum: sha1:9f52f692b4dbe39cccaed4b6ded8b031f7ca801a
@@ -415,12 +418,12 @@ trackedFiles:
     pristine_git_object: 1fc8dea0b68fcb86e61ac17dc88eee78697877b6
   jsr.json:
     id: 7f6ab7767282
-    last_write_checksum: sha1:48346f59495ce7232ef25085d96c7161435e8329
-    pristine_git_object: 90c26af9dad731c52392fea979ceef2d74d59309
+    last_write_checksum: sha1:65eb34cc90a7cc3b0c0649f6c1e431209d87f5de
+    pristine_git_object: 2cacf0ec34e3b311986b1b09c6ce1bb241ff6d72
   package.json:
     id: 7030d0b2f71b
-    last_write_checksum: sha1:fe4f6550b5035e3f255f1a459dfcdf33a603816c
-    pristine_git_object: ceb28ae363af19ebef963baf4e2972cbfc0c2555
+    last_write_checksum: sha1:082976fc0963153fd48978e625c22b95a4758d32
+    pristine_git_object: 54a0caf48e0401ed90f78a4cb837c049ba6e2a2b
   src/core.ts:
     id: f431fdbcd144
     last_write_checksum: sha1:5f09bf9eb4fbf48cf074ac6da34208591325cffc
@@ -619,8 +622,8 @@ trackedFiles:
     pristine_git_object: 44be0eae8246521b230e8e711a88eff738fc015d
   src/lib/config.ts:
     id: 320761608fb3
-    last_write_checksum: sha1:d974fbc9744f6cdcb177473c4024e558c344f10d
-    pristine_git_object: 6d60d1fdd24e3ca9115410cfd811a3a6609ef0dd
+    last_write_checksum: sha1:b92cdfc60096e90d8921d414b2fd7c9e521e5632
+    pristine_git_object: 23141b6c762ec265c49963f888fc5ddfbfdae088
   src/lib/dlv.ts:
     id: b1988214835a
     last_write_checksum: sha1:1dd3e3fbb4550c4bf31f5ef997faff355d6f3250
@@ -1490,3 +1493,83 @@ examples:
         "500":
           application/json: {"error": "An error occurred", "code": "VALIDATION_ERROR"}
 examplesVersion: 1.0.2
+releaseNotes: |
+  ## Typescript SDK Changes:
+  * `emailr.emails.send()`: **Added**
+  * `emailr.emails.get()`: **Added**
+  * `emailr.emails.list()`: **Added**
+  * `emailr.contacts.create()`: **Added**
+  * `emailr.contacts.list()`: **Added**
+  * `emailr.contacts.bulkCreate()`: **Added**
+  * `emailr.contacts.get()`: **Added**
+  * `emailr.contacts.update()`: **Added**
+  * `emailr.contacts.delete()`: **Added**
+  * `emailr.templates.create()`: **Added**
+  * `emailr.templates.list()`: **Added**
+  * `emailr.templates.get()`: **Added**
+  * `emailr.templates.update()`: **Added**
+  * `emailr.templates.delete()`: **Added**
+  * `emailr.domains.add()`: **Added**
+  * `emailr.domains.list()`: **Added**
+  * `emailr.domains.verify()`: **Added**
+  * `emailr.domains.getDnsStatus()`: **Added**
+  * `emailr.domains.update()`: **Added**
+  * `emailr.domains.delete()`: **Added**
+  * `emailr.apiKeys.create()`: **Added**
+  * `emailr.apiKeys.list()`: **Added**
+  * `emailr.apiKeys.revoke()`: **Added**
+  * `emailr.webhooks.create()`: **Added**
+  * `emailr.webhooks.list()`: **Added**
+  * `emailr.webhooks.toggle()`: **Added**
+  * `emailr.webhooks.delete()`: **Added**
+  * `emailr.webhooks.getDeliveries()`: **Added**
+  * `emailr.broadcasts.create()`: **Added**
+  * `emailr.broadcasts.list()`: **Added**
+  * `emailr.broadcasts.send()`: **Added**
+  * `emailr.broadcasts.get()`: **Added**
+  * `emailr.segments.create()`: **Added**
+  * `emailr.segments.list()`: **Added**
+  * `emailr.segments.addContact()`: **Added**
+  * `emailr.metrics.getEmail()`: **Added**
+  * `emailr.logs.list()`: **Added**
+  * `emailr.settings.getUnsubscribe()`: **Added**
+  * `emailr.settings.updateUnsubscribe()`: **Added**
+  * `emailr.emails.sendEmail()`: **Deleted** **Breaking** :warning:
+  * `emailr.emails.getEmail()`: **Deleted** **Breaking** :warning:
+  * `emailr.emails.listEmails()`: **Deleted** **Breaking** :warning:
+  * `emailr.contacts.listContacts()`: **Deleted** **Breaking** :warning:
+  * `emailr.contacts.createContact()`: **Deleted** **Breaking** :warning:
+  * `emailr.contacts.bulkCreateContacts()`: **Deleted** **Breaking** :warning:
+  * `emailr.contacts.getContact()`: **Deleted** **Breaking** :warning:
+  * `emailr.contacts.updateContact()`: **Deleted** **Breaking** :warning:
+  * `emailr.contacts.deleteContact()`: **Deleted** **Breaking** :warning:
+  * `emailr.templates.listTemplates()`: **Deleted** **Breaking** :warning:
+  * `emailr.templates.createTemplate()`: **Deleted** **Breaking** :warning:
+  * `emailr.templates.getTemplate()`: **Deleted** **Breaking** :warning:
+  * `emailr.templates.updateTemplate()`: **Deleted** **Breaking** :warning:
+  * `emailr.templates.deleteTemplate()`: **Deleted** **Breaking** :warning:
+  * `emailr.domains.listDomains()`: **Deleted** **Breaking** :warning:
+  * `emailr.domains.addDomain()`: **Deleted** **Breaking** :warning:
+  * `emailr.domains.verifyDomain()`: **Deleted** **Breaking** :warning:
+  * `emailr.domains.getDomainDnsStatus()`: **Deleted** **Breaking** :warning:
+  * `emailr.domains.deleteDomain()`: **Deleted** **Breaking** :warning:
+  * `emailr.domains.updateDomain()`: **Deleted** **Breaking** :warning:
+  * `emailr.apiKeys.listApiKeys()`: **Deleted** **Breaking** :warning:
+  * `emailr.apiKeys.createApiKey()`: **Deleted** **Breaking** :warning:
+  * `emailr.apiKeys.revokeApiKey()`: **Deleted** **Breaking** :warning:
+  * `emailr.webhooks.listWebhooks()`: **Deleted** **Breaking** :warning:
+  * `emailr.webhooks.createWebhook()`: **Deleted** **Breaking** :warning:
+  * `emailr.webhooks.toggleWebhook()`: **Deleted** **Breaking** :warning:
+  * `emailr.webhooks.deleteWebhook()`: **Deleted** **Breaking** :warning:
+  * `emailr.webhooks.getWebhookDeliveries()`: **Deleted** **Breaking** :warning:
+  * `emailr.broadcasts.listBroadcasts()`: **Deleted** **Breaking** :warning:
+  * `emailr.broadcasts.createBroadcast()`: **Deleted** **Breaking** :warning:
+  * `emailr.broadcasts.sendBroadcast()`: **Deleted** **Breaking** :warning:
+  * `emailr.broadcasts.getBroadcast()`: **Deleted** **Breaking** :warning:
+  * `emailr.segments.listSegments()`: **Deleted** **Breaking** :warning:
+  * `emailr.segments.createSegment()`: **Deleted** **Breaking** :warning:
+  * `emailr.segments.addContactToSegment()`: **Deleted** **Breaking** :warning:
+  * `emailr.metrics.getEmailMetrics()`: **Deleted** **Breaking** :warning:
+  * `emailr.logs.listLogs()`: **Deleted** **Breaking** :warning:
+  * `emailr.settings.getUnsubscribeSettings()`: **Deleted** **Breaking** :warning:
+  * `emailr.settings.updateUnsubscribeSettings()`: **Deleted** **Breaking** :warning:

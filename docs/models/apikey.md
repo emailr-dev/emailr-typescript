@@ -15,10 +15,10 @@ let value: ApiKey = {
     "<value 2>",
     "<value 3>",
   ],
-  lastUsedAt: new Date("2024-04-30T06:27:49.410Z"),
+  lastUsedAt: new Date("2025-04-30T06:27:49.410Z"),
   createdBy: "3b461dc8-77b6-4eac-8475-b169948d7c50",
-  createdAt: new Date("2024-11-13T00:09:23.394Z"),
-  revokedAt: new Date("2023-08-08T01:09:47.950Z"),
+  createdAt: new Date("2025-11-13T00:09:23.394Z"),
+  revokedAt: new Date("2024-08-07T01:09:47.950Z"),
 };
 ```
 
