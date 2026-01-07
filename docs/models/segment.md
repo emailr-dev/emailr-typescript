@@ -15,8 +15,8 @@ let value: Segment = {
     "key1": "<value>",
   },
   createdBy: "2b112bfa-876f-432f-85a6-773a24052a71",
-  createdAt: new Date("2024-02-29T07:17:23.309Z"),
-  updatedAt: new Date("2023-07-01T01:28:30.818Z"),
+  createdAt: new Date("2025-02-28T07:17:23.309Z"),
+  updatedAt: new Date("2024-06-30T01:28:30.818Z"),
 };
 ```
 

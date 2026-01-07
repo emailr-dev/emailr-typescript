@@ -51,6 +51,7 @@ typescript:
   enumFormat: union
   envVarPrefix: EMAILR
   exportZodModelNamespace: false
+  flatAdditionalProperties: false
   flattenGlobalSecurity: true
   flatteningOrder: parameters-first
   formStringArrayEncodeMode: array

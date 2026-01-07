@@ -20,11 +20,11 @@ let value: Broadcast = {
   openedCount: 3729.39,
   clickedCount: 6507.74,
   bouncedCount: 4468.1,
-  scheduledAt: new Date("2023-09-08T05:44:42.762Z"),
-  startedAt: new Date("2023-09-23T07:57:50.029Z"),
-  completedAt: new Date("2025-01-20T20:20:07.915Z"),
+  scheduledAt: new Date("2024-09-07T05:44:42.762Z"),
+  startedAt: new Date("2024-09-22T07:57:50.029Z"),
+  completedAt: new Date("2026-01-20T20:20:07.915Z"),
   createdBy: "65587118-c94d-499e-8d4e-4e69510eb79c",
-  createdAt: new Date("2023-09-19T12:01:52.482Z"),
+  createdAt: new Date("2024-09-18T12:01:52.482Z"),
 };
 ```
 
