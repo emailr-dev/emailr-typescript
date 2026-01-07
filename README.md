@@ -23,9 +23,6 @@ Developer-friendly & type-safe Typescript SDK specifically catered to leverage *
   * [Server Selection](#server-selection)
   * [Custom HTTP Client](#custom-http-client)
   * [Debugging](#debugging)
-* [Development](#development)
-  * [Maturity](#maturity)
-  * [Contributions](#contributions)
 
 <!-- End Table of Contents [toc] -->
 
@@ -108,6 +105,8 @@ async function run() {
       threadId: "123e4567-e89b-12d3-a456-426614174000",
       parentEmailId: "123e4567-e89b-12d3-a456-426614174000",
     },
+    replyToEmail: "support@example.com",
+    previewText: "Check out our latest updates...",
   });
 
   console.log(result);
@@ -165,6 +164,8 @@ async function run() {
       threadId: "123e4567-e89b-12d3-a456-426614174000",
       parentEmailId: "123e4567-e89b-12d3-a456-426614174000",
     },
+    replyToEmail: "support@example.com",
+    previewText: "Check out our latest updates...",
   });
 
   console.log(result);
@@ -187,12 +188,26 @@ run();
 * [list](docs/sdks/apikeys/README.md#list) - List API keys
 * [revoke](docs/sdks/apikeys/README.md#revoke) - Revoke API key
 
+### [Billing](docs/sdks/billing/README.md)
+
+* [postV1BillingCheckout](docs/sdks/billing/README.md#postv1billingcheckout)
+* [postV1BillingPortal](docs/sdks/billing/README.md#postv1billingportal)
+* [getV1BillingUsage](docs/sdks/billing/README.md#getv1billingusage)
+* [postV1BillingWebhooks](docs/sdks/billing/README.md#postv1billingwebhooks)
+
 ### [Broadcasts](docs/sdks/broadcasts/README.md)
 
 * [create](docs/sdks/broadcasts/README.md#create) - Create broadcast
 * [list](docs/sdks/broadcasts/README.md#list) - List broadcasts
 * [send](docs/sdks/broadcasts/README.md#send) - Send broadcast
 * [get](docs/sdks/broadcasts/README.md#get) - Get broadcast
+
+### [ContactSync](docs/sdks/contactsync/README.md)
+
+* [postV1ContactSyncSupabase](docs/sdks/contactsync/README.md#postv1contactsyncsupabase)
+* [postV1ContactSyncWebhookSyncId](docs/sdks/contactsync/README.md#postv1contactsyncwebhooksyncid)
+* [getV1ContactSync](docs/sdks/contactsync/README.md#getv1contactsync)
+* [deleteV1ContactSyncId](docs/sdks/contactsync/README.md#deletev1contactsyncid)
 
 ### [Contacts](docs/sdks/contacts/README.md)
 
@@ -218,6 +233,15 @@ run();
 * [get](docs/sdks/emails/README.md#get) - Get email by ID
 * [list](docs/sdks/emails/README.md#list) - List emails
 
+### [Integrations](docs/sdks/integrations/README.md)
+
+* [getV1IntegrationsConnections](docs/sdks/integrations/README.md#getv1integrationsconnections)
+* [getV1IntegrationsSupabaseAuthorize](docs/sdks/integrations/README.md#getv1integrationssupabaseauthorize)
+* [getV1IntegrationsSupabaseCallback](docs/sdks/integrations/README.md#getv1integrationssupabasecallback)
+* [deleteV1IntegrationsId](docs/sdks/integrations/README.md#deletev1integrationsid)
+* [getV1IntegrationsVercelAuthorize](docs/sdks/integrations/README.md#getv1integrationsvercelauthorize)
+* [getV1IntegrationsVercelCallback](docs/sdks/integrations/README.md#getv1integrationsvercelcallback)
+
 ### [Logs](docs/sdks/logs/README.md)
 
 * [list](docs/sdks/logs/README.md#list) - Get email logs
@@ -241,6 +265,10 @@ run();
 * [getUnsubscribe](docs/sdks/settings/README.md#getunsubscribe) - Get unsubscribe settings
 * [updateUnsubscribe](docs/sdks/settings/README.md#updateunsubscribe) - Update unsubscribe settings
 
+### [Smtp](docs/sdks/smtp/README.md)
+
+* [getSmtpCredentials](docs/sdks/smtp/README.md#getsmtpcredentials) - Get SMTP credentials
+
 ### [Templates](docs/sdks/templates/README.md)
 
 * [create](docs/sdks/templates/README.md#create) - Create a template
@@ -248,6 +276,18 @@ run();
 * [get](docs/sdks/templates/README.md#get) - Get template
 * [update](docs/sdks/templates/README.md#update) - Update template
 * [delete](docs/sdks/templates/README.md#delete) - Delete template
+
+### [Topics](docs/sdks/topics/README.md)
+
+* [getV1Topics](docs/sdks/topics/README.md#getv1topics)
+* [postV1Topics](docs/sdks/topics/README.md#postv1topics)
+* [putV1TopicsId](docs/sdks/topics/README.md#putv1topicsid)
+* [deleteV1TopicsId](docs/sdks/topics/README.md#deletev1topicsid)
+
+### [Unsubscribe](docs/sdks/unsubscribe/README.md)
+
+* [getV1UnsubscribeOrganizationId](docs/sdks/unsubscribe/README.md#getv1unsubscribeorganizationid)
+* [postV1Unsubscribe](docs/sdks/unsubscribe/README.md#postv1unsubscribe)
 
 ### [Webhooks](docs/sdks/webhooks/README.md)
 
@@ -278,6 +318,10 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 - [`apiKeysCreate`](docs/sdks/apikeys/README.md#create) - Create API key
 - [`apiKeysList`](docs/sdks/apikeys/README.md#list) - List API keys
 - [`apiKeysRevoke`](docs/sdks/apikeys/README.md#revoke) - Revoke API key
+- [`billingGetV1BillingUsage`](docs/sdks/billing/README.md#getv1billingusage)
+- [`billingPostV1BillingCheckout`](docs/sdks/billing/README.md#postv1billingcheckout)
+- [`billingPostV1BillingPortal`](docs/sdks/billing/README.md#postv1billingportal)
+- [`billingPostV1BillingWebhooks`](docs/sdks/billing/README.md#postv1billingwebhooks)
 - [`broadcastsCreate`](docs/sdks/broadcasts/README.md#create) - Create broadcast
 - [`broadcastsGet`](docs/sdks/broadcasts/README.md#get) - Get broadcast
 - [`broadcastsList`](docs/sdks/broadcasts/README.md#list) - List broadcasts
@@ -288,6 +332,10 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 - [`contactsGet`](docs/sdks/contacts/README.md#get) - Get contact
 - [`contactsList`](docs/sdks/contacts/README.md#list) - List contacts
 - [`contactsUpdate`](docs/sdks/contacts/README.md#update) - Update contact
+- [`contactSyncDeleteV1ContactSyncId`](docs/sdks/contactsync/README.md#deletev1contactsyncid)
+- [`contactSyncGetV1ContactSync`](docs/sdks/contactsync/README.md#getv1contactsync)
+- [`contactSyncPostV1ContactSyncSupabase`](docs/sdks/contactsync/README.md#postv1contactsyncsupabase)
+- [`contactSyncPostV1ContactSyncWebhookSyncId`](docs/sdks/contactsync/README.md#postv1contactsyncwebhooksyncid)
 - [`domainsAdd`](docs/sdks/domains/README.md#add) - Add domain
 - [`domainsDelete`](docs/sdks/domains/README.md#delete) - Delete domain
 - [`domainsGetDnsStatus`](docs/sdks/domains/README.md#getdnsstatus) - Get DNS status
@@ -297,6 +345,12 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 - [`emailsGet`](docs/sdks/emails/README.md#get) - Get email by ID
 - [`emailsList`](docs/sdks/emails/README.md#list) - List emails
 - [`emailsSend`](docs/sdks/emails/README.md#send) - Send an email
+- [`integrationsDeleteV1IntegrationsId`](docs/sdks/integrations/README.md#deletev1integrationsid)
+- [`integrationsGetV1IntegrationsConnections`](docs/sdks/integrations/README.md#getv1integrationsconnections)
+- [`integrationsGetV1IntegrationsSupabaseAuthorize`](docs/sdks/integrations/README.md#getv1integrationssupabaseauthorize)
+- [`integrationsGetV1IntegrationsSupabaseCallback`](docs/sdks/integrations/README.md#getv1integrationssupabasecallback)
+- [`integrationsGetV1IntegrationsVercelAuthorize`](docs/sdks/integrations/README.md#getv1integrationsvercelauthorize)
+- [`integrationsGetV1IntegrationsVercelCallback`](docs/sdks/integrations/README.md#getv1integrationsvercelcallback)
 - [`logsList`](docs/sdks/logs/README.md#list) - Get email logs
 - [`metricsGetEmail`](docs/sdks/metrics/README.md#getemail) - Get email metrics
 - [`metricsGetUsage`](docs/sdks/metrics/README.md#getusage) - Get usage metrics
@@ -308,11 +362,18 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 - [`settingsGetUnsubscribe`](docs/sdks/settings/README.md#getunsubscribe) - Get unsubscribe settings
 - [`settingsUpdateOrganization`](docs/sdks/settings/README.md#updateorganization) - Update organization settings
 - [`settingsUpdateUnsubscribe`](docs/sdks/settings/README.md#updateunsubscribe) - Update unsubscribe settings
+- [`smtpGetSmtpCredentials`](docs/sdks/smtp/README.md#getsmtpcredentials) - Get SMTP credentials
 - [`templatesCreate`](docs/sdks/templates/README.md#create) - Create a template
 - [`templatesDelete`](docs/sdks/templates/README.md#delete) - Delete template
 - [`templatesGet`](docs/sdks/templates/README.md#get) - Get template
 - [`templatesList`](docs/sdks/templates/README.md#list) - List templates
 - [`templatesUpdate`](docs/sdks/templates/README.md#update) - Update template
+- [`topicsDeleteV1TopicsId`](docs/sdks/topics/README.md#deletev1topicsid)
+- [`topicsGetV1Topics`](docs/sdks/topics/README.md#getv1topics)
+- [`topicsPostV1Topics`](docs/sdks/topics/README.md#postv1topics)
+- [`topicsPutV1TopicsId`](docs/sdks/topics/README.md#putv1topicsid)
+- [`unsubscribeGetV1UnsubscribeOrganizationId`](docs/sdks/unsubscribe/README.md#getv1unsubscribeorganizationid)
+- [`unsubscribePostV1Unsubscribe`](docs/sdks/unsubscribe/README.md#postv1unsubscribe)
 - [`webhooksCreate`](docs/sdks/webhooks/README.md#create) - Create webhook
 - [`webhooksDelete`](docs/sdks/webhooks/README.md#delete) - Delete webhook
 - [`webhooksGetDeliveries`](docs/sdks/webhooks/README.md#getdeliveries) - Get webhook deliveries
@@ -363,6 +424,8 @@ async function run() {
       threadId: "123e4567-e89b-12d3-a456-426614174000",
       parentEmailId: "123e4567-e89b-12d3-a456-426614174000",
     },
+    replyToEmail: "support@example.com",
+    previewText: "Check out our latest updates...",
   }, {
     retries: {
       strategy: "backoff",
@@ -429,6 +492,8 @@ async function run() {
       threadId: "123e4567-e89b-12d3-a456-426614174000",
       parentEmailId: "123e4567-e89b-12d3-a456-426614174000",
     },
+    replyToEmail: "support@example.com",
+    previewText: "Check out our latest updates...",
   });
 
   console.log(result);
@@ -491,6 +556,8 @@ async function run() {
         threadId: "123e4567-e89b-12d3-a456-426614174000",
         parentEmailId: "123e4567-e89b-12d3-a456-426614174000",
       },
+      replyToEmail: "support@example.com",
+      previewText: "Check out our latest updates...",
     });
 
     console.log(result);
@@ -517,11 +584,10 @@ run();
 ```
 
 ### Error Classes
-**Primary errors:**
+**Primary error:**
 * [`EmailrError`](./src/models/errors/emailrerror.ts): The base class for HTTP error responses.
-  * [`ErrorT`](./src/models/errors/errort.ts): Generic error.
 
-<details><summary>Less common errors (6)</summary>
+<details><summary>Less common errors (19)</summary>
 
 <br />
 
@@ -534,9 +600,24 @@ run();
 
 
 **Inherit from [`EmailrError`](./src/models/errors/emailrerror.ts)**:
+* [`ErrorT`](./src/models/errors/errort.ts): Applicable to 44 of 64 methods.*
+* [`BadRequestError`](./src/models/errors/badrequesterror.ts): Invalid signature. Status code `400`. Applicable to 1 of 64 methods.*
+* [`PostV1BillingCheckoutUnauthorizedError`](./src/models/errors/postv1billingcheckoutunauthorizederror.ts): Unauthorized. Status code `401`. Applicable to 1 of 64 methods.*
+* [`PostV1BillingPortalUnauthorizedError`](./src/models/errors/postv1billingportalunauthorizederror.ts): Unauthorized. Status code `401`. Applicable to 1 of 64 methods.*
+* [`GetV1BillingUsageUnauthorizedError`](./src/models/errors/getv1billingusageunauthorizederror.ts): Unauthorized. Status code `401`. Applicable to 1 of 64 methods.*
+* [`GetV1TopicsUnauthorizedError`](./src/models/errors/getv1topicsunauthorizederror.ts): Unauthorized. Status code `401`. Applicable to 1 of 64 methods.*
+* [`PostV1TopicsUnauthorizedError`](./src/models/errors/postv1topicsunauthorizederror.ts): Unauthorized. Status code `401`. Applicable to 1 of 64 methods.*
+* [`PutV1TopicsIdUnauthorizedError`](./src/models/errors/putv1topicsidunauthorizederror.ts): Unauthorized. Status code `401`. Applicable to 1 of 64 methods.*
+* [`DeleteV1TopicsIdUnauthorizedError`](./src/models/errors/deletev1topicsidunauthorizederror.ts): Unauthorized. Status code `401`. Applicable to 1 of 64 methods.*
+* [`PutV1TopicsIdNotFoundError`](./src/models/errors/putv1topicsidnotfounderror.ts): Topic not found. Status code `404`. Applicable to 1 of 64 methods.*
+* [`DeleteV1TopicsIdNotFoundError`](./src/models/errors/deletev1topicsidnotfounderror.ts): Topic not found. Status code `404`. Applicable to 1 of 64 methods.*
+* [`GetV1UnsubscribeOrganizationIdNotFoundError`](./src/models/errors/getv1unsubscribeorganizationidnotfounderror.ts): Organization or contact not found. Status code `404`. Applicable to 1 of 64 methods.*
+* [`PostV1UnsubscribeNotFoundError`](./src/models/errors/postv1unsubscribenotfounderror.ts): Contact not found. Status code `404`. Applicable to 1 of 64 methods.*
 * [`ResponseValidationError`](./src/models/errors/responsevalidationerror.ts): Type mismatch between the data returned from the server and the structure expected by the SDK. See `error.rawValue` for the raw value and `error.pretty()` for a nicely formatted multi-line string.
 
 </details>
+
+\* Check [the method documentation](#available-resources-and-operations) to see if the error is applicable.
 <!-- End Error Handling [errors] -->
 
 <!-- Start Server Selection [server] -->
@@ -581,6 +662,8 @@ async function run() {
       threadId: "123e4567-e89b-12d3-a456-426614174000",
       parentEmailId: "123e4567-e89b-12d3-a456-426614174000",
     },
+    replyToEmail: "support@example.com",
+    previewText: "Check out our latest updates...",
   });
 
   console.log(result);
@@ -658,3 +741,5 @@ const sdk = new Emailr({ debugLogger: console });
 
 You can also enable a default debug logger by setting an environment variable `EMAILR_DEBUG` to true.
 <!-- End Debugging [debug] -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->

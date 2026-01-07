@@ -17,6 +17,9 @@ export type Template = {
   htmlContent: string | null;
   textContent: string | null;
   variables: Array<string> | null;
+  fromEmail: string | null;
+  replyTo: string | null;
+  previewText: string | null;
   createdBy: string | null;
   createdAt: Date;
   updatedAt: Date;
@@ -32,6 +35,9 @@ export const Template$inboundSchema: z.ZodMiniType<Template, unknown> = z.pipe(
     html_content: types.nullable(types.string()),
     text_content: types.nullable(types.string()),
     variables: types.nullable(z.array(types.string())),
+    from_email: types.nullable(types.string()),
+    reply_to: types.nullable(types.string()),
+    preview_text: types.nullable(types.string()),
     created_by: types.nullable(types.string()),
     created_at: types.date(),
     updated_at: types.date(),
@@ -41,6 +47,9 @@ export const Template$inboundSchema: z.ZodMiniType<Template, unknown> = z.pipe(
       "organization_id": "organizationId",
       "html_content": "htmlContent",
       "text_content": "textContent",
+      "from_email": "fromEmail",
+      "reply_to": "replyTo",
+      "preview_text": "previewText",
       "created_by": "createdBy",
       "created_at": "createdAt",
       "updated_at": "updatedAt",

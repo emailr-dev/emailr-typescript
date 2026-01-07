@@ -19,16 +19,36 @@ import {
 export type To = string | Array<string>;
 
 export type SendEmailRequest = {
-  from: string;
+  /**
+   * Sender email. Required if not using a template with from_email set.
+   */
+  from?: string | undefined;
   to: string | Array<string>;
-  subject: string;
+  /**
+   * Email subject. Required if not using a template.
+   */
+  subject?: string | undefined;
   html?: string | undefined;
   text?: string | undefined;
+  /**
+   * Template ID. When provided, template values are used for subject, html, text, from, reply_to, and preview_text.
+   */
   templateId?: string | undefined;
+  /**
+   * Variables to render in the template. Must include all variables defined in the template.
+   */
   templateData?: { [k: string]: any | null } | undefined;
   tags?: { [k: string]: string } | undefined;
   attachments?: Array<Attachment> | undefined;
   replyTo?: ReplyTo | undefined;
+  /**
+   * Reply-To email address. Overrides template reply_to if provided.
+   */
+  replyToEmail?: string | undefined;
+  /**
+   * Preview text (preheader). Overrides template preview_text if provided.
+   */
+  previewText?: string | undefined;
 };
 
 /** @internal */
@@ -46,9 +66,9 @@ export function toToJSON(to: To): string {
 
 /** @internal */
 export type SendEmailRequest$Outbound = {
-  from: string;
+  from?: string | undefined;
   to: string | Array<string>;
-  subject: string;
+  subject?: string | undefined;
   html?: string | undefined;
   text?: string | undefined;
   template_id?: string | undefined;
@@ -56,6 +76,8 @@ export type SendEmailRequest$Outbound = {
   tags?: { [k: string]: string } | undefined;
   attachments?: Array<Attachment$Outbound> | undefined;
   replyTo?: ReplyTo$Outbound | undefined;
+  reply_to_email?: string | undefined;
+  preview_text?: string | undefined;
 };
 
 /** @internal */
@@ -64,9 +86,9 @@ export const SendEmailRequest$outboundSchema: z.ZodMiniType<
   SendEmailRequest
 > = z.pipe(
   z.object({
-    from: z.string(),
+    from: z.optional(z.string()),
     to: smartUnion([z.string(), z.array(z.string())]),
-    subject: z.string(),
+    subject: z.optional(z.string()),
     html: z.optional(z.string()),
     text: z.optional(z.string()),
     templateId: z.optional(z.string()),
@@ -74,11 +96,15 @@ export const SendEmailRequest$outboundSchema: z.ZodMiniType<
     tags: z.optional(z.record(z.string(), z.string())),
     attachments: z.optional(z.array(Attachment$outboundSchema)),
     replyTo: z.optional(ReplyTo$outboundSchema),
+    replyToEmail: z.optional(z.string()),
+    previewText: z.optional(z.string()),
   }),
   z.transform((v) => {
     return remap$(v, {
       templateId: "template_id",
       templateData: "template_data",
+      replyToEmail: "reply_to_email",
+      previewText: "preview_text",
     });
   }),
 );

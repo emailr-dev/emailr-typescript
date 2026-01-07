@@ -52,6 +52,8 @@ async function run() {
       threadId: "123e4567-e89b-12d3-a456-426614174000",
       parentEmailId: "123e4567-e89b-12d3-a456-426614174000",
     },
+    replyToEmail: "support@example.com",
+    previewText: "Check out our latest updates...",
   });
 
   console.log(result);
@@ -102,6 +104,8 @@ async function run() {
       threadId: "123e4567-e89b-12d3-a456-426614174000",
       parentEmailId: "123e4567-e89b-12d3-a456-426614174000",
     },
+    replyToEmail: "support@example.com",
+    previewText: "Check out our latest updates...",
   });
   if (res.ok) {
     const { value: result } = res;
