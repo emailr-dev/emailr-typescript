@@ -17,9 +17,12 @@ let value: Template = {
     "<value 2>",
     "<value 3>",
   ],
-  createdBy: "477b3ed4-a34f-48ff-bb93-33d0e13df279",
-  createdAt: new Date("2025-06-13T12:05:06.926Z"),
-  updatedAt: new Date("2024-07-11T02:33:42.768Z"),
+  fromEmail: "<value>",
+  replyTo: "<value>",
+  previewText: "<value>",
+  createdBy: "b3ed4a34-f8ff-4b93-933d-0e13df279c72",
+  createdAt: new Date("2024-01-15T20:22:52.314Z"),
+  updatedAt: new Date("2024-01-19T07:01:19.362Z"),
 };
 ```
 
@@ -34,6 +37,9 @@ let value: Template = {
 | `htmlContent`                                                                                 | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
 | `textContent`                                                                                 | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
 | `variables`                                                                                   | *string*[]                                                                                    | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `fromEmail`                                                                                   | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `replyTo`                                                                                     | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
+| `previewText`                                                                                 | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
 | `createdBy`                                                                                   | *string*                                                                                      | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
 | `createdAt`                                                                                   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |
 | `updatedAt`                                                                                   | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | :heavy_check_mark:                                                                            | N/A                                                                                           |                                                                                               |

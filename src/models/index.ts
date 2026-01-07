@@ -32,6 +32,7 @@ export * from "./segment.js";
 export * from "./sendbroadcastresponse.js";
 export * from "./sendemailrequest.js";
 export * from "./sendemailresponse.js";
+export * from "./smtpcredentials.js";
 export * from "./success.js";
 export * from "./teammember.js";
 export * from "./template.js";

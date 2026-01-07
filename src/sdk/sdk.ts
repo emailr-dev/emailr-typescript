@@ -4,15 +4,21 @@
 
 import { ClientSDK } from "../lib/sdks.js";
 import { ApiKeys } from "./apikeys.js";
+import { Billing } from "./billing.js";
 import { Broadcasts } from "./broadcasts.js";
 import { Contacts } from "./contacts.js";
+import { ContactSync } from "./contactsync.js";
 import { Domains } from "./domains.js";
 import { Emails } from "./emails.js";
+import { Integrations } from "./integrations.js";
 import { Logs } from "./logs.js";
 import { Metrics } from "./metrics.js";
 import { Segments } from "./segments.js";
 import { Settings } from "./settings.js";
+import { Smtp } from "./smtp.js";
 import { Templates } from "./templates.js";
+import { Topics } from "./topics.js";
+import { Unsubscribe } from "./unsubscribe.js";
 import { Webhooks } from "./webhooks.js";
 
 export class Emailr extends ClientSDK {
@@ -69,5 +75,35 @@ export class Emailr extends ClientSDK {
   private _settings?: Settings;
   get settings(): Settings {
     return (this._settings ??= new Settings(this._options));
+  }
+
+  private _smtp?: Smtp;
+  get smtp(): Smtp {
+    return (this._smtp ??= new Smtp(this._options));
+  }
+
+  private _billing?: Billing;
+  get billing(): Billing {
+    return (this._billing ??= new Billing(this._options));
+  }
+
+  private _topics?: Topics;
+  get topics(): Topics {
+    return (this._topics ??= new Topics(this._options));
+  }
+
+  private _unsubscribe?: Unsubscribe;
+  get unsubscribe(): Unsubscribe {
+    return (this._unsubscribe ??= new Unsubscribe(this._options));
+  }
+
+  private _integrations?: Integrations;
+  get integrations(): Integrations {
+    return (this._integrations ??= new Integrations(this._options));
+  }
+
+  private _contactSync?: ContactSync;
+  get contactSync(): ContactSync {
+    return (this._contactSync ??= new ContactSync(this._options));
   }
 }

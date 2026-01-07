@@ -36,6 +36,9 @@ async function run() {
       "name",
       "company",
     ],
+    fromEmail: "hello@example.com",
+    replyTo: "support@example.com",
+    previewText: "Check out what's new...",
   });
 
   console.log(result);
@@ -68,6 +71,9 @@ async function run() {
       "name",
       "company",
     ],
+    fromEmail: "hello@example.com",
+    replyTo: "support@example.com",
+    previewText: "Check out what's new...",
   });
   if (res.ok) {
     const { value: result } = res;
@@ -269,6 +275,9 @@ async function run() {
         "name",
         "company",
       ],
+      fromEmail: "hello@example.com",
+      replyTo: "support@example.com",
+      previewText: "Check out what's new...",
     },
   });
 
@@ -304,6 +313,9 @@ async function run() {
         "name",
         "company",
       ],
+      fromEmail: "hello@example.com",
+      replyTo: "support@example.com",
+      previewText: "Check out what's new...",
     },
   });
   if (res.ok) {

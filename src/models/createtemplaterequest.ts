@@ -11,6 +11,18 @@ export type CreateTemplateRequest = {
   htmlContent?: string | undefined;
   textContent?: string | undefined;
   variables?: Array<string> | undefined;
+  /**
+   * Default from email address. Must match a verified domain.
+   */
+  fromEmail?: string | undefined;
+  /**
+   * Reply-To email address for template-based emails.
+   */
+  replyTo?: string | undefined;
+  /**
+   * Preview text (preheader) shown in email clients.
+   */
+  previewText?: string | undefined;
 };
 
 /** @internal */
@@ -20,6 +32,9 @@ export type CreateTemplateRequest$Outbound = {
   html_content?: string | undefined;
   text_content?: string | undefined;
   variables?: Array<string> | undefined;
+  from_email?: string | undefined;
+  reply_to?: string | undefined;
+  preview_text?: string | undefined;
 };
 
 /** @internal */
@@ -33,11 +48,17 @@ export const CreateTemplateRequest$outboundSchema: z.ZodMiniType<
     htmlContent: z.optional(z.string()),
     textContent: z.optional(z.string()),
     variables: z.optional(z.array(z.string())),
+    fromEmail: z.optional(z.string()),
+    replyTo: z.optional(z.string()),
+    previewText: z.optional(z.string()),
   }),
   z.transform((v) => {
     return remap$(v, {
       htmlContent: "html_content",
       textContent: "text_content",
+      fromEmail: "from_email",
+      replyTo: "reply_to",
+      previewText: "preview_text",
     });
   }),
 );
